@@ -10,6 +10,6 @@ Group Members:
 For 6IMSOFTWENG
 
 Requirements to install and test:
-* Dart
 * Flutter
-* Android Studio
+* Android Studio with requirements
+* Visual Studio Code
