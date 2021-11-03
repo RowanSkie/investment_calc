@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:investment_calc/widgets/showstats.dart';
 
-class MyApp extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
