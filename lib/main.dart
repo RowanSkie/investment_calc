@@ -11,7 +11,7 @@ void main() {
       '/home': (context) => HomePage(),
       '/calc': (context) => InvestPage(),
       '/assets': (context) => AssetsPage(),
-      '/settings': (context) => SettingsPage();
+      '/settings': (context) => SettingsPage()
     },
   ));
 }
