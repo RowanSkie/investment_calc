@@ -1,7 +1,6 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:investment_calc/main.dart';
 
 class RoiCalc extends StatefulWidget {
   const RoiCalc({Key? key}) : super(key: key);

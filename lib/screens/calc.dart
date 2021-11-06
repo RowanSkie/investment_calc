@@ -1,11 +1,9 @@
 // for calculator
+
 import 'package:math_expressions/math_expressions.dart';
 import 'package:flutter/material.dart';
 
-import 'package:investment_calc/screens/home.dart';
-import 'package:investment_calc/widgets/showstats.dart'; // temporary until dedicated widget is here, preferably called calculators.dart
-import 'package:investment_calc/screens/RoiCalc.dart';
-import 'package:investment_calc/main.dart';
+// original writer is Kent Steven Mercado
 
 class InvestPage extends StatefulWidget {
   const InvestPage({Key? key}) : super(key: key);
