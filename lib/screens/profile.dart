@@ -1,9 +1,9 @@
-// for main home page, locked one
+// for main home page, unlocked one
 
 import 'package:flutter/material.dart';
 import 'package:investment_calc/widgets/showstats.dart';
 
-class HomePage extends StatelessWidget {
+class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
