@@ -1,18 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-
-class SecondApp2 extends StatelessWidget {
-  const SecondApp2({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: RoiCalc(),
-    ); // MaterialApp
-  }
-}
+import 'package:investment_calc/main.dart';
 
 class RoiCalc extends StatefulWidget {
   const RoiCalc({Key? key}) : super(key: key);
@@ -25,72 +14,108 @@ class _RoiCalcState extends State<RoiCalc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text("Calculator ROI"),
       ),
-      backgroundColor: Colors.white38,
+      backgroundColor: Colors.grey[800],
       body: SingleChildScrollView(
-        child: Center(
-            child: Padding(
-          padding: const EdgeInsets.all(15),
-          child: Row(
-            children: [
-              Text(
-                "Basic Calculator  ",
-                style: TextStyle(fontSize: 18, color: Colors.black54),
-              ),
-              Text(
-                "/  Investment",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                    color: Colors.redAccent[400]),
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextButton(
+                  child: (Text(
+                    "Basic Calculator  ",
+                    style: TextStyle(fontSize: 18, color: Colors.black54),
+                  )),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/calc');
+                  },
+                ),
+                Text(
+                  "/  Investment",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                      color: Colors.redAccent),
+                ),
+              ],
+            ),
+            SizedBox(height: 20),
+            Container(
+              width: 250,
+              child: Column(
+                children: <Widget>[
+                  Text("Return on Investment",
+                      style: TextStyle(
+                        color: Colors.redAccent,
+                        fontSize: 20,
+                      )),
+                  SizedBox(height: 20),
                   TextField(
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: "enter amount",
-                      labelText: 'Amount of Shares',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      hintStyle: TextStyle(color: Colors.white38),
+                      fillColor: Colors.black26,
+                      filled: true,
+                      hintText: 'Amount At Maturity',
                     ),
+                    style: TextStyle(color: Colors.white),
                   ),
+                  SizedBox(height: 20),
                   TextField(
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: "enter amount",
-                      labelText: 'Value per Share',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      hintStyle: TextStyle(color: Colors.white38),
+                      fillColor: Colors.black26,
+                      filled: true,
+                      hintText: 'Investment Period',
                     ),
+                    style: TextStyle(color: Colors.white),
                   ),
+                  SizedBox(height: 20),
                   TextField(
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: "enter amount",
-                      labelText: 'Number of Years: ',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      hintStyle: TextStyle(color: Colors.white38),
+                      fillColor: Colors.black26,
+                      filled: true,
+                      hintText: 'Interest Rate %',
                     ),
+                    style: TextStyle(color: Colors.white),
                   ),
+                  SizedBox(height: 20),
                   TextField(
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: "enter amount",
-                      labelText: 'Interest Rate %: ',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      hintStyle: TextStyle(color: Colors.white38),
+                      fillColor: Colors.black26,
+                      filled: true,
+                      hintText: 'ROI',
                     ),
+                    style: TextStyle(color: Colors.white),
                   ),
-                  TextField(
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(),
-                      hintText: "enter amount",
-                      labelText: 'ROI %: ',
-                    ),
+                  SizedBox(height: 20),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: (Text('CALCULATE')),
                   ),
-                  ButtonBar(),
-                  Text("Calculate")
                 ],
               ),
-            ],
-          ),
-        )),
+            ),
+          ],
+        ),
       ),
     );
   }

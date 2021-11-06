@@ -73,7 +73,9 @@ class _InvestPageState extends State<InvestPage> {
                             style:
                                 TextStyle(fontSize: 18, color: Colors.black54),
                           ),
-                          onPressed: () => Navigator.pushNamed(context, /calcRoi),
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/calcRoi');
+                          },
                         ),
                       ],
                     ),
