@@ -2,6 +2,7 @@
 
 import 'package:math_expressions/math_expressions.dart';
 import 'package:flutter/material.dart';
+import 'package:investment_calc/widgets/sidebar.dart'; // Added by Bryan
 
 // original writer is Kent Steven Mercado
 
@@ -43,6 +44,7 @@ class _InvestPageState extends State<InvestPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: SideBar(),
       appBar: AppBar(
         title: Text('Calculator'),
       ), //AppBar

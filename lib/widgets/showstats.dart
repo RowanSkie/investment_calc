@@ -1,6 +1,8 @@
 // widgets for home screen
 
 import 'package:flutter/material.dart';
+import 'package:investment_calc/widgets/sidebar.dart';
+import 'package:investment_calc/main.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -22,6 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: SideBar(),
       appBar: AppBar(
         title: Text(widget.title),
       ),

@@ -2,16 +2,18 @@
 
 import 'package:flutter/material.dart';
 import 'package:investment_calc/widgets/showstats.dart';
+import 'package:investment_calc/widgets/sidebar.dart';
 
 class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Investment Calculator',
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
+    return Scaffold(
+      drawer: SideBar(),
+      appBar: AppBar(
+        title: Text('Home'),
+        backgroundColor: Colors.red,
       ),
-      home: MyHomePage(title: 'Home'),
     );
   }
 }
+

@@ -1,4 +1,4 @@
-//import 'dart:js';
+  //import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:investment_calc/screens/RoiCalc.dart';
@@ -10,7 +10,7 @@ import 'package:investment_calc/screens/assets.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/calcRoi',
+    initialRoute: '/home',
     routes: {
       '/profile': (context) => ProfilePage(),
       '/home': (context) => HomePage(),
