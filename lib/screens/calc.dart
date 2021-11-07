@@ -48,7 +48,7 @@ class _InvestPageState extends State<InvestPage> {
       appBar: AppBar(
         title: Text('Calculator'),
       ), //AppBar
-      backgroundColor: Colors.white38,
+      backgroundColor: Colors.red,
       body: Column(
         children: <Widget>[
           Container(

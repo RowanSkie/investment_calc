@@ -12,6 +12,7 @@ class SettingsPage extends StatelessWidget {
         primarySwatch: Colors.orange,
       ),
       home: MyHomePage(title: 'Home'),
+      
     );
   }
 }

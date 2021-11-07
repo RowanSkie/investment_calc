@@ -19,7 +19,7 @@ class _RoiCalcState extends State<RoiCalc> {
       appBar: AppBar(
         title: const Text("Calculator ROI"),
       ),
-      backgroundColor: Colors.grey[800],
+      backgroundColor: Colors.red,
       body: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.max,

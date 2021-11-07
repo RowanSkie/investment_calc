@@ -19,5 +19,6 @@ void main() {
       '/settings': (context) => SettingsPage(),
       '/calcRoi': (context) => RoiCalc(),
     },
+    debugShowCheckedModeBanner: false,
   ));
 }
