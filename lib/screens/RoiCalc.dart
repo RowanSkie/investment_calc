@@ -17,9 +17,10 @@ class _RoiCalcState extends State<RoiCalc> {
       resizeToAvoidBottomInset: false,
       drawer: SideBar(),
       appBar: AppBar(
-        title: const Text("Calculator ROI"),
+        title: const Text("Investment Calculator"),
+        backgroundColor: Colors.red,
       ),
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.grey[800],
       body: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.max,
@@ -30,17 +31,17 @@ class _RoiCalcState extends State<RoiCalc> {
                 TextButton(
                   child: (Text(
                     "Basic Calculator  ",
-                    style: TextStyle(fontSize: 18, color: Colors.black54),
+                    style: TextStyle(fontSize: 16, color: Colors.black54),
                   )),
                   onPressed: () {
                     Navigator.pushNamed(context, '/calc');
                   },
                 ),
                 Text(
-                  "/  Investment",
+                  "/ Investment Computation",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontSize: 16,
                       color: Colors.redAccent),
                 ),
               ],

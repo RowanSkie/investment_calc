@@ -47,8 +47,9 @@ class _InvestPageState extends State<InvestPage> {
       drawer: SideBar(),
       appBar: AppBar(
         title: Text('Calculator'),
+         backgroundColor: Colors.red,
       ), //AppBar
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.white38,
       body: Column(
         children: <Widget>[
           Container(
@@ -61,17 +62,17 @@ class _InvestPageState extends State<InvestPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Basic Calculator  /',
+                          'Basic Calculator /',
                           style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 18,
+                              fontSize: 16,
                               color: Colors.redAccent),
                         ),
                         TextButton(
                           child: Text(
-                            "  Investment",
+                            " Investment Computation",
                             style:
-                                TextStyle(fontSize: 18, color: Colors.black54),
+                                TextStyle(fontSize: 16, color: Colors.black54),
                           ),
                           onPressed: () {
                             Navigator.pushNamed(context, '/calcRoi');
