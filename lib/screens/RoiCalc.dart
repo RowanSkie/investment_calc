@@ -12,6 +12,10 @@ class RoiCalc extends StatefulWidget {
 
 class _RoiCalcState extends State<RoiCalc> {
   @override
+  TextEditingController maturity = TextEditingController();
+  TextEditingController investmentperiod = TextEditingController();
+  TextEditingController interest = TextEditingController();
+  TextEditingController roi = TextEditingController();
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
@@ -58,6 +62,8 @@ class _RoiCalcState extends State<RoiCalc> {
                       )),
                   SizedBox(height: 20),
                   TextField(
+                    controller: maturity,
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
@@ -71,6 +77,8 @@ class _RoiCalcState extends State<RoiCalc> {
                   ),
                   SizedBox(height: 20),
                   TextField(
+                    controller: investmentperiod,
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
@@ -84,6 +92,8 @@ class _RoiCalcState extends State<RoiCalc> {
                   ),
                   SizedBox(height: 20),
                   TextField(
+                    controller: interest,
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
@@ -97,6 +107,8 @@ class _RoiCalcState extends State<RoiCalc> {
                   ),
                   SizedBox(height: 20),
                   TextField(
+                    controller: roi,
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
@@ -110,7 +122,13 @@ class _RoiCalcState extends State<RoiCalc> {
                   ),
                   SizedBox(height: 20),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      print(maturity.text);
+                      print(investmentperiod.text);
+                      print(interest.text);
+                      print(roi.text);
+                      print(int.parse(roi.text) + int.parse(maturity.text));
+                    },
                     child: (Text('CALCULATE')),
                   ),
                 ],
