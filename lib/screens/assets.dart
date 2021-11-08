@@ -1,7 +1,6 @@
 //Added some information if there are currently no assets - Gab
 
 import 'package:flutter/material.dart';
-import 'package:investment_calc/widgets/showstats.dart'; // temporary until dedicated widget is here, preferably called assetdatabase.dart
 import 'package:investment_calc/widgets/sidebar.dart';
 
 class AssetsPage extends StatefulWidget {
@@ -11,15 +10,14 @@ class AssetsPage extends StatefulWidget {
   _AssetsPageState createState() => _AssetsPageState();
 }
 
-class _AssetsPageState extends State<AssetsPage>{
-  int MyAssets = 1;
+class _AssetsPageState extends State<AssetsPage> {
+  int myAssets = 1;
 
-  String checkAssets(Assets){
-    if (Assets == 0){
+  String checkAssets(assets) {
+    if (assets == 0) {
       return 'There are no Assets to show.';
-    }
-    else{
-       return '';
+    } else {
+      return '';
     }
   }
 
@@ -36,13 +34,11 @@ class _AssetsPageState extends State<AssetsPage>{
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              checkAssets(MyAssets),
+              checkAssets(myAssets),
             ),
-            
           ],
         ),
       ),
-
     );
   }
 }

@@ -1,7 +1,6 @@
 // for main home page, unlocked one
 
 import 'package:flutter/material.dart';
-import 'package:investment_calc/widgets/showstats.dart';
 import 'package:investment_calc/widgets/sidebar.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -16,4 +15,3 @@ class ProfilePage extends StatelessWidget {
     );
   }
 }
-

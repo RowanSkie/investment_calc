@@ -1,7 +1,6 @@
 // for main home page, locked one
 
 import 'package:flutter/material.dart';
-import 'package:investment_calc/widgets/showstats.dart';
 import 'package:investment_calc/widgets/sidebar.dart';
 
 class HomePage extends StatelessWidget {

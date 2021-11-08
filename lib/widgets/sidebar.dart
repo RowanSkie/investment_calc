@@ -3,8 +3,6 @@
 // Author of this code is Bryan Maniago
 
 import 'package:flutter/material.dart';
-import 'package:investment_calc/main.dart';
-
 
 class SideBar extends StatelessWidget {
   @override
@@ -25,39 +23,27 @@ class SideBar extends StatelessWidget {
           ListTile(
               leading: Icon(Icons.water_damage),
               title: Text('Home'),
-            onTap: () => {
-                Navigator.pushNamed(
-                    context,
-                    '/home')
-            }
-          ),
+              onTap: () => {Navigator.pushNamed(context, '/home')}),
           ListTile(
             leading: Icon(Icons.verified_user),
             title: Text('Profile'),
-            onTap: () => {
-              Navigator.pushNamed(
-                  context,
-                  '/profile')
-            },
+            onTap: () => {Navigator.pushNamed(context, '/profile')},
           ),
           ListTile(
             leading: Icon(Icons.border_color),
             title: Text('My Assets'),
-            onTap: () => {Navigator.pushNamed(context,'/assets')},
+            onTap: () => {Navigator.pushNamed(context, '/assets')},
           ),
           ListTile(
               leading: Icon(Icons.calculate),
               title: Text('Calculator'),
-              onTap: (){
-                Navigator.pushNamed(
-                    context,
-                    '/calc');
-              }
-          ),
+              onTap: () {
+                Navigator.pushNamed(context, '/calc');
+              }),
           ListTile(
             leading: Icon(Icons.settings),
             title: Text('Settings'),
-            onTap: () => {Navigator.pushNamed(context,'/settings')},
+            onTap: () => {Navigator.pushNamed(context, '/settings')},
           ),
         ],
       ),
