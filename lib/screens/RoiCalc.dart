@@ -53,6 +53,7 @@ class _RoiCalcState extends State<RoiCalc> {
             SizedBox(height: 20),
             Container(
               width: 250,
+              alignment: Alignment.center,
               child: Column(
                 children: <Widget>[
                   Text("Return on Investment",
@@ -62,6 +63,7 @@ class _RoiCalcState extends State<RoiCalc> {
                       )),
                   SizedBox(height: 20),
                   TextField(
+                    textAlign: TextAlign.center,
                     controller: maturity,
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
@@ -77,6 +79,7 @@ class _RoiCalcState extends State<RoiCalc> {
                   ),
                   SizedBox(height: 20),
                   TextField(
+                    textAlign: TextAlign.center,
                     controller: investmentperiod,
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
@@ -92,6 +95,7 @@ class _RoiCalcState extends State<RoiCalc> {
                   ),
                   SizedBox(height: 20),
                   TextField(
+                    textAlign: TextAlign.center,
                     controller: interest,
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
@@ -107,8 +111,8 @@ class _RoiCalcState extends State<RoiCalc> {
                   ),
                   SizedBox(height: 20),
                   TextField(
+                    textAlign: TextAlign.center,
                     controller: roi,
-                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
@@ -120,14 +124,19 @@ class _RoiCalcState extends State<RoiCalc> {
                     ),
                     style: TextStyle(color: Colors.white),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(
+                    height: 20,
+                  ),
                   ElevatedButton(
                     onPressed: () {
+                      //Testings di ko alam formula eh nYAAHAHAH
                       print(maturity.text);
                       print(investmentperiod.text);
                       print(interest.text);
                       print(roi.text);
-                      print(int.parse(roi.text) + int.parse(maturity.text));
+                      roi.text = (int.parse(maturity.text) +
+                              int.parse(investmentperiod.text))
+                          .toString();
                     },
                     child: (Text('CALCULATE')),
                   ),
