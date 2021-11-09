@@ -49,7 +49,7 @@ class _InvestPageState extends State<InvestPage> {
         title: Text('Calculator'),
         backgroundColor: Colors.red,
       ), //AppBar
-      backgroundColor: Colors.white38,
+      backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
           Container(
@@ -86,7 +86,7 @@ class _InvestPageState extends State<InvestPage> {
                     alignment: Alignment.centerRight,
                     child: Text(
                       userInput,
-                      style: TextStyle(fontSize: 18, color: Colors.white38),
+                      style: TextStyle(fontSize: 18, color: Colors.black54),
                     ),
                   ),
                   Container(
@@ -96,7 +96,7 @@ class _InvestPageState extends State<InvestPage> {
                       answer,
                       style: TextStyle(
                           fontSize: 30,
-                          color: Colors.white,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold),
                     ),
                   )
@@ -118,7 +118,7 @@ class _InvestPageState extends State<InvestPage> {
                       });
                     },
                     buttonText: buttons[index],
-                    color: Colors.black26,
+                    color: Colors.white38,
                     textColor: Colors.redAccent,
                   );
                 }
@@ -127,7 +127,7 @@ class _InvestPageState extends State<InvestPage> {
                 else if (index == 1) {
                   return MyButton(
                     buttonText: buttons[index],
-                    color: Colors.black26,
+                    color: Colors.white38,
                     textColor: Colors.redAccent,
                   );
                 }
@@ -140,7 +140,7 @@ class _InvestPageState extends State<InvestPage> {
                       });
                     },
                     buttonText: buttons[index],
-                    color: Colors.black26,
+                    color: Colors.white38,
                     textColor: Colors.redAccent,
                   );
                 }
@@ -154,7 +154,7 @@ class _InvestPageState extends State<InvestPage> {
                       });
                     },
                     buttonText: buttons[index],
-                    color: Colors.black26,
+                    color: Colors.white38,
                     textColor: Colors.redAccent,
                   );
                 }
@@ -182,11 +182,11 @@ class _InvestPageState extends State<InvestPage> {
                     },
                     buttonText: buttons[index],
                     color: isOperator(buttons[index])
-                        ? Colors.black26
-                        : Colors.black26,
+                        ? Colors.white38
+                        : Colors.white70,
                     textColor: isOperator(buttons[index])
                         ? Colors.redAccent
-                        : Colors.white,
+                        : Colors.black,
                   );
                 }
               },
