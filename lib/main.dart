@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:investment_calc/screens/RoiCalc.dart';
+import 'package:investment_calc/screens/addassets.dart';
 import 'package:investment_calc/screens/home.dart';
 import 'package:investment_calc/screens/profile.dart';
 import 'package:investment_calc/screens/calc.dart';
@@ -18,6 +19,7 @@ void main() {
       '/assets': (context) => AssetsPage(),
       '/settings': (context) => SettingsPage(),
       '/calcRoi': (context) => RoiCalc(),
+      '/addsets': (context) => AddsetsPage(),
     },
     debugShowCheckedModeBanner: false,
   ));

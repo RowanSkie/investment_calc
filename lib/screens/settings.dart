@@ -1,7 +1,7 @@
-// set up privacy and other minor stuff
+// The page should be able to change settings like the colors and if the privacy is through PIN or none
 
 import 'package:flutter/material.dart';
-import 'package:investment_calc/widgets/showstats.dart'; // temporary until dedicated widget is here, preferably called showsettings.dart
+// import 'package:investment_calc/widgets/appcolor.dart'; //uncomment once settings work
 
 class SettingsPage extends StatelessWidget {
   @override
@@ -11,8 +11,9 @@ class SettingsPage extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: MyHomePage(title: 'Home'),
-      
+      home: MyHomePage(
+          title:
+              'Home'), // this is broken, need to be replaced with better usage
     );
   }
 }

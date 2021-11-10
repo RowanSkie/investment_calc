@@ -35,6 +35,11 @@ class SideBar extends StatelessWidget {
             onTap: () => {Navigator.pushNamed(context, '/assets')},
           ),
           ListTile(
+            leading: Icon(Icons.add_to_queue),
+            title: Text('Add New Asset'),
+            onTap: () => {Navigator.pushNamed(context, '/addsets')},
+          ),
+          ListTile(
               leading: Icon(Icons.calculate),
               title: Text('Calculator'),
               onTap: () {
