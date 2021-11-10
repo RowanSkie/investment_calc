@@ -13,3 +13,5 @@ Requirements to install and test:
 * Flutter
 * Android Studio with requirements
 * Visual Studio Code
+
+Dedicated to Romel Cabalhin, who wasn't able to contribute because he sadly passed away.
