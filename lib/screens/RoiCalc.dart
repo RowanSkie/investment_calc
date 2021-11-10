@@ -145,8 +145,6 @@ class _RoiCalcState extends State<RoiCalc> {
                       ),
                       hintStyle: TextStyle(color: Colors.black),
                       fillColor: Colors.black26,
-                      filled: true,
-                      hintText: 'ROI',
                     ),
                     style: TextStyle(color: Colors.red),
                     readOnly: true,
