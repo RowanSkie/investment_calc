@@ -21,7 +21,7 @@ class SideBar extends StatelessWidget {
             ),
           ),
           ListTile(
-              leading: Icon(Icons.water_damage),
+              leading: Icon(Icons.home),
               title: Text('Home'),
               onTap: () => {Navigator.pushNamed(context, '/home')}),
           ListTile(

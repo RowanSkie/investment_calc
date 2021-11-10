@@ -17,3 +17,5 @@ class SettingsPage extends StatelessWidget {
     );
   }
 }
+
+// so, switch will be here, default at light mode, and the vars used will be screencolorL, tabcolorL, and textcolorL
