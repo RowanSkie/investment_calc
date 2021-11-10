@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 
 var screencolorL = Colors.white;
 var textcolorL = Colors.black;
-var tabcolorL = Colors.amber[400];
+var tabcolorL = Colors.greenAccent[400];
 
 var screencolorB = Colors.black87;
 var textcolorB = Colors.white;
-var tabcolorB = Colors.amber[400];
+var tabcolorB = Colors.greenAccent[400];
 
 var defaultAddAssetValue = 0;
 var defaultAddAssetName = 'Asset';
