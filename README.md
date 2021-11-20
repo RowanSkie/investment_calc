@@ -27,7 +27,7 @@ Software DFD:
 * https://github.com/RowanSkie/investment_calc/blob/main/docs/Group4_DFD.pdf
 
 Project Demonstration Video:
-* N/A
+* https://drive.google.com/file/d/1oDYvtglW-Pszn31gFQTDO92EA2LntM-W/view
 
 Project Manual:
-* N/A
+* https://docs.google.com/document/d/1O3MyHXWL2ehTx-o68523DyHMP4gc28gWjU9YnjQuyKo/edit?usp=sharing
