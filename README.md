@@ -20,9 +20,11 @@ Dedicated to Romel Cabalhin, who wasn't able to contribute because he sadly pass
 
 Softawre Project Plan:
 * https://docs.google.com/document/d/1VQJGMmaHiB8BH4WF19G2WEgMPNeEZOwrE9nC4Bp9HOI/edit?usp=sharing
+* https://github.com/RowanSkie/investment_calc/blob/main/docs/Software%20Project%20Plan.pdf
 
 Software DFD:
 * https://docs.google.com/document/d/1jRSak5PYdqZmpQAG46a28O58TY1IHc2P7afuj0OjCuI/edit?usp=sharing
+* https://github.com/RowanSkie/investment_calc/blob/main/docs/Group4_DFD.pdf
 
 Project Demonstration Video:
 * N/A
